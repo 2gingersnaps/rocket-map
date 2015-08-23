@@ -1,1 +1,39 @@
-test
+<div class="col-lg-3">
+  chat space
+</div>
+<div class="col-lg-9">
+  the MAP...
+
+<!-- required lat is 0 to 90 and long is -180 to 180 -->
+<!-- center = anonymous angular object within the scope -->
+<!-- via yo angular, main.html will have controller and maybe also a service. In this case, main.js is attached to main.html use yo angular to bind a scope variable -->
+<!-- assumed $scope implied and is coming from main.js -->
+
+
+
+
+
+<ui-gmap-google-map class="angular-google-map-container" center="map.center" zoom="map.zoom">
+
+  <ui-gmap-marker coords="map.center" idKey="marker.idKey"></ui-gmap-marker>
+
+  <ui-gmap-marker coords="marker1.coords" idKey="'1'"></ui-gmap-marker>
+
+  <ui-gmap-marker coords="marker2.coords" idKey="'2'"></ui-gmap-marker>
+
+  <ui-gmap-marker coords="marker3.coords" idKey="'3'"></ui-gmap-marker>
+
+
+
+
+
+
+
+<!--   <ui-gmap-marker data-ng-repeat="marker in markerList" model="markerList" coords="'self.coords'"></ui-gmap-marker>
+  
+<ui-gmap-markers models='map.markerList' coords=" 'self.coords' "></ui-gmap-markers> -->
+
+</ui-gmap-google-map>
+
+
+</div>

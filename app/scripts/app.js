@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name rocketMapApp
- * @description
- * # rocketMapApp
- *
- * Main module of the application.
- */
 angular
   .module('rocketMapApp', [
     'ngAnimate',
@@ -15,7 +7,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'uiGmapgoogle-maps'
+    // updated dependency
   ])
   .config(function ($routeProvider) {
     $routeProvider
